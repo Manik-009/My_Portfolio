@@ -205,6 +205,9 @@ main p {
    position: relative;
    animation: proar 2s linear 0.1s infinite alternate;
 }
+.projects h2::after {
+   content: " \2B9E";
+}
 @keyframes proar {
    from {
       transform: rotateX(60deg);
@@ -269,28 +272,28 @@ main p {
 }
 @keyframes arrow {
    0% {
-      text-shadow: 5px 5px 5px white;
+      text-shadow: -5px 0px 3px white;
    }
    15% {
-      text-shadow: 5px 5px 5px red;
+      text-shadow: -5px 0px 3px red;
    }
    30% {
-      text-shadow: 5px 5px 5px orange;
+      text-shadow: -5px 0px 3px orange;
    }
    45% {
-      text-shadow: 5px 5px 5px yellow;
+      text-shadow: -5px 0px 3px yellow;
    }
    60% {
-      text-shadow: 5px 5px 5px green;
+      text-shadow: -5px 0px 3px green;
    }
    75% {
-      text-shadow: 5px 5px 5px blue;
+      text-shadow: -5px 0px 3px blue;
    }
    90% {
-      text-shadow: 5px 5px 5px indigo;
+      text-shadow: -5px 0px 3px indigo;
    }
    100% {
-      text-shadow: 5px 5px 5px violet;
+      text-shadow: -5px 0px 3px violet;
    }
 }
 .projects .github {
@@ -419,8 +422,7 @@ footer input[type="text"],
 }
 footer input[type="text"]:focus,
 [type="email"]:focus {
-   background: white;
-   color: #000;
+   background: #545170;
    caret-color: #7303c0;
 }
 footer form textarea {
@@ -432,8 +434,7 @@ footer form textarea {
    caret-color: #ec38bc;
 }
 footer form textarea:focus {
-   color: #000;
-   background: white;
+   background: #545170;
    caret-color: #7303c0;
 }
 footer #madeby {
@@ -502,6 +503,20 @@ footer #madeby span {
       align-items: center;
       width: 100vw;
       background: rgba(255, 255, 255, 0.15);
+      clip-path: polygon(
+         0% 15%,
+         15% 15%,
+         15% 0%,
+         85% 0%,
+         85% 15%,
+         100% 15%,
+         100% 85%,
+         85% 85%,
+         85% 100%,
+         15% 100%,
+         15% 85%,
+         0% 85%
+      );
       justify-content: flex-start;
    }
    .nav-bar li {
@@ -572,18 +587,21 @@ footer #madeby span {
       width: 170px;
       height: 170px;
    }
+   .projects h2::after {
+      content: " \2B9F";
+   }
    .projects h3 {
       font-size: 0.5em;
    }
    @keyframes proar {
       from {
-         transform: rotateX(60deg);
+         transform: rotateX(0deg);
          top: 0;
          right: 0;
       }
       to {
-         transform: rotateX(0deg);
-         top: 20px;
+         transform: rotateX(50deg);
+         top: 30px;
          right: 0px;
       }
    }
@@ -612,5 +630,119 @@ footer #madeby span {
       font-variant: small-caps;
       border: 3px solid #ec38bc;
       padding: 7px;
+   }
+}
+@media only screen and (min-width: 689px) and (max-width: 1024px) {
+   header ul li {
+      font-size: 0.7em;
+   }
+   header img {
+      width: 140px;
+   }
+   #lig-btn {
+      font-size: 0.9em;
+   }
+   .nav-bar li::after {
+      content: "\01F4A8";
+      font-size: 1em;
+   }
+   .projects {
+      display: flex;
+      flex-direction: column;
+   }
+   .projects h2::after {
+      content: " \2B9F";
+   }
+   .projects img {
+      width: 250px;
+   }
+   .projects > div {
+      margin: 1.5em 0;
+   }
+   main {
+      display: flex;
+      justify-content: space-between;
+   }
+   #about {
+      display: grid;
+      margin: 3em 1em;
+      grid-template-columns: 1fr;
+      gap: 0.5em;
+      grid-template-rows: auto;
+   }
+   main img {
+      width: 270px;
+   }
+   main h2 {
+      font-size: 1em;
+   }
+   main h2::first-letter {
+      font-size: 1.9em;
+      text-shadow: 0 0 5px skyblue;
+   }
+   main h4 {
+      font-size: 1em;
+      letter-spacing: 2px;
+   }
+   main h4 span {
+      text-shadow: -2px 3px 2px tomato;
+      font-size: 1.5em;
+      color: skyblue;
+   }
+   main p {
+      letter-spacing: 6px;
+      word-spacing: 8px;
+      font-size: 0.8em;
+   }
+   @keyframes proar {
+      from {
+         transform: rotateX(0deg);
+         top: 0;
+         right: 0;
+      }
+      to {
+         transform: rotateX(50deg);
+         top: 30px;
+         right: 0px;
+      }
+   }
+   footer .container {
+      display: grid;
+      gap: 1em;
+      grid-template-columns: 1fr 1fr;
+   }
+   footer div > p {
+      font-size: 0.55em;
+   }
+   footer form {
+      font-size: 0.7em;
+   }
+}
+@media only screen and (min-width: 1025px) {
+   header ul li {
+      font-size: 0.85em;
+   }
+   .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+   }
+   .projects h2 {
+      animation-duration: 3s;
+   }
+   @keyframes proar {
+      from {
+         transform: rotateX(0deg);
+         top: 0;
+         left: 0;
+      }
+      to {
+         transform: rotateX(90deg);
+         top: 0;
+         left: 100px;
+      }
+   }
+   .projects img {
+      width: 200px;
    }
 }
