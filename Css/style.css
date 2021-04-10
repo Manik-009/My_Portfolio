@@ -206,7 +206,7 @@ main p {
    animation: proar 2s linear 0.1s infinite alternate;
 }
 .projects h2::after {
-   content: " \2B9E";
+   content: " \0021DD";
 }
 @keyframes proar {
    from {
