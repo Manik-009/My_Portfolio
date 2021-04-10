@@ -588,7 +588,7 @@ footer #madeby span {
       height: 170px;
    }
    .projects h2::after {
-      content: " \2B9F";
+      content: " \0021AF";
    }
    .projects h3 {
       font-size: 0.5em;
@@ -651,7 +651,7 @@ footer #madeby span {
       flex-direction: column;
    }
    .projects h2::after {
-      content: " \2B9F";
+      content: " \0021AF";
    }
    .projects img {
       width: 250px;
