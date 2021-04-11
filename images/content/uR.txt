@@ -1,2 +1,0 @@
-Urban Restaurant is created from scratch , Basically at first imma design this on mah copy and created just for fun but slowly imma getting more excited and dedicated to make it , then finally imma successfully created A Responsive website from scratch.
-< Built with HTML5 , CSS3 and little bit of JavaScript />
