@@ -1,2 +1,0 @@
-This Project was created in my initial days of Web Development.In this webpage it's all about Justin Bieber and her wifey Hailey Bieber like how they meet & got married to each other.
-< Built with HTML5 and CSS3 />
