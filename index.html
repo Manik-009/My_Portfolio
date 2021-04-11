@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
+      <title>Portfolio</title>
+      <link rel="stylesheet" href="Css/style.css" />
+      <script
+         src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+         data-auto-replace-svg="nest"
+      ></script>
+   </head>
+   <body onload="load()">
+      <header>
+         <a href="index.html" id="link">
+            <img src="images/logo.png" alt="Logo"
+         /></a>
+         <nav>
+            <label id="togg" for="toggle">&#9776;</label>
+            <input type="checkbox" name="checkbox" id="toggle" />
+            <ul class="nav-bar">
+               <li><a class="links" href="#about">옺 About</a></li>
+               <li>
+                  <a class="links" href="#projects">&#128195; Projects</a>
+               </li>
+               <li>
+                  <a class="links" href="#contact">&#9993; Contact</a>
+               </li>
+            </ul>
+         </nav>
+         <button onclick="lightM()" id="lig-btn">&#9681;</button>
+      </header>
+      <main>
+         <div id="about">
+            <h2>Hi !</h2>
+            <h4>I'm <span id="m">M</span>anik Gupta</h4>
+            <p>Frontend Developer</p>
+            <div id="social">
+               <button>
+                  <a class="resume" href="images/Manik-Gupta.pdf" download
+                     >Download Resume</a
+                  >
+               </button>
+               <a class="resume" href="https://github.com/Manik-009 "
+                  ><i class="fab fa-github"></i
+               ></a>
+               <a
+                  class="resume"
+                  href="https://www.linkedin.com/in/manik-gupta-079847206"
+               >
+                  <i class="fab fa-linkedin"></i
+               ></a>
+               <a
+                  class="resume"
+                  href="https://www.facebook.com/profile.php?id=100011490288367"
+                  ><i class="fab fa-facebook"></i
+               ></a>
+            </div>
+         </div>
+         <img src="images/me.png" alt="manik" />
+      </main>
+      <div class="projects" id="projects">
+         <h2>Project's</h2>
+         <div id="proj1">
+            <h3>Parallax Webpage</h3>
+            <a href="https://manik-009.github.io/Parallax-webpage/" class="pro"
+               ><img src="images/parallax.png" alt="parallax"
+            /></a>
+            <p>
+               <a
+                  href="https://github.com/Manik-009/Parallax-webpage.git"
+                  class="github"
+                  ><span>&#10173;</span>Visit the Github Repository</a
+               >
+            </p>
+            <p id="first-pro"></p>
+            <button id="firstbtn" class="readM-btn">Read more</button>
+         </div>
+         <div id="proj2">
+            <h3>Urban Restaurant</h3>
+            <a class="pro" href="https://manik-009.github.io/Urban-Restaurant/"
+               ><img src="images/Urban.jpg" alt="urban"
+            /></a>
+            <p>
+               <a
+                  href="https://github.com/Manik-009/Urban-Restaurant.git"
+                  class="github"
+               >
+                  <span>&#10173;</span> Visit the Github Repository</a
+               >
+            </p>
+            <p id="sec-pro"></p>
+            <button id="secbtn" class="readM-btn">Read more</button>
+         </div>
+         <div id="proj3">
+            <h3>Fashion Point</h3>
+            <a href="https://manik-009.github.io/Shopping/" class="pro"
+               ><img src="images/Shopping.png" alt="fashion point"
+            /></a>
+            <p>
+               <a
+                  href="https://github.com/Manik-009/Shopping.git"
+                  class="github"
+                  ><span>&#10173;</span>Visit the Github Repository</a
+               >
+            </p>
+            <p id="third-pro"></p>
+            <button id="thirdbtn" class="readM-btn">Read more</button>
+         </div>
+      </div>
+      <footer>
+         <img src="images/logo.png" alt="logo" />
+         <div class="container">
+            <div>
+               <p>&#9742; +91-7006481622</p>
+               <p>&#9993; mhjnmanik@gmail.com</p>
+               <p>&#9963; 184101, Kathua,Jammu and Kashmir (U.T),India.</p>
+            </div>
+            <div>
+               <form
+                  action="https://formsubmit.co/mhjnmanik@gmail.com"
+                  method="POST"
+                  id="contact"
+               >
+                  <fieldset>
+                     <legend>&#10087; Contact Me &#9753;</legend>
+                     <input
+                        type="hidden"
+                        name="_subject"
+                        value="Gotchh You Boiii !!!"
+                     />
+                     <!-- <input
+                        type="hidden"
+                        name="_next"
+                        value="https://https://manik-009.github.io/tha//thanks.html"
+                     /> -->
+                     <label for="name">Name : </label>
+                     <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                     />
+                     <br />
+                     <label for="email">Email : </label>
+                     <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                     /><br />
+                     <label for="msg">Message : </label>
+                     <textarea
+                        name="Message"
+                        id="msg"
+                        placeholder="Enter your message"
+                        required
+                     ></textarea>
+                     <br />
+                     <button id="sub-btn">Send</button>
+                  </fieldset>
+               </form>
+            </div>
+         </div>
+         <p id="madeby">Made With <span>&#9825;</span> By Manik Gupta</p>
+      </footer>
+      <script src="js/main.js"></script>
+   </body>
+</html>
