@@ -14,7 +14,8 @@
    color: cadetblue;
    border: none;
    position: relative;
-   animation: btn 10s linear 0.1s infinite alternate;
+   cursor:pointer;
+   animation: btn 7s linear 0.1s infinite alternate;
 }
 @keyframes btn {
    0% {
